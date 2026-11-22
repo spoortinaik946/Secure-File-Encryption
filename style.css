@@ -1,0 +1,41 @@
+* { box-sizing: border-box; }
+body {
+  margin: 0; min-height: 100vh; color: #17243a;
+  font-family: Inter, Segoe UI, Arial, sans-serif;
+  background: linear-gradient(135deg, #eef4fb, #f8fafc);
+}
+.shell { width: min(980px, 92%); margin: 42px auto; }
+.hero { text-align: center; margin-bottom: 30px; }
+.lock {
+  width: 54px; height: 54px; margin: 0 auto 14px; display: grid;
+  place-items: center; border-radius: 16px; color: white; background: #176b63;
+  font-size: 25px; box-shadow: 0 8px 22px #176b6333;
+}
+.eyebrow { color: #176b63; font-size: 11px; font-weight: 800; letter-spacing: 2px; }
+h1 { margin: 8px 0; font-size: clamp(30px, 5vw, 43px); }
+.intro, .muted { color: #64748b; }
+.tag { display: inline-block; margin-top: 8px; padding: 7px 12px; border-radius: 99px;
+  background: #e0f2ef; color: #176b63; font-size: 12px; font-weight: 700; }
+.cards { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+.card, .info { background: white; border: 1px solid #dce5ee; border-radius: 18px;
+  padding: 25px; box-shadow: 0 12px 32px #1e293b0b; }
+.card-icon { width: 38px; height: 38px; border-radius: 12px; display: grid;
+  place-items: center; background: #e8f4f2; color: #176b63; font-size: 23px; }
+h2 { margin: 14px 0 6px; font-size: 21px; }
+.muted { font-size: 14px; line-height: 1.5; min-height: 40px; }
+form { display: flex; flex-direction: column; gap: 10px; margin-top: 20px; }
+label { font-size: 13px; font-weight: 700; margin-top: 5px; }
+input { width: 100%; padding: 11px; border: 1px solid #cbd5e1; border-radius: 9px;
+  background: #fbfdff; font-size: 13px; }
+input[type=file] { padding: 9px; }
+button { border: 0; border-radius: 9px; padding: 12px 15px; margin-top: 8px;
+  color: white; background: #176b63; font-weight: 700; cursor: pointer; }
+button:hover { filter: brightness(.94); }
+button.secondary { background: #243b63; }
+.info { margin-top: 20px; }
+.info h3 { margin-top: 0; }
+.info li { color: #526176; margin: 8px 0; font-size: 14px; }
+.notice { margin: 0 0 16px; padding: 12px 15px; border-radius: 10px; font-size: 14px; }
+.notice.error { background: #fff1f0; color: #a12d25; border: 1px solid #ffd1cc; }
+footer { text-align: center; color: #8491a3; font-size: 12px; margin: 25px 0; }
+@media (max-width: 700px) { .cards { grid-template-columns: 1fr; } .shell { margin: 25px auto; } }
